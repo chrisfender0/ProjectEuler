@@ -13,7 +13,6 @@ public class ID_Three {
 	
 	static BigInteger treePrimeFactorication(BigInteger num) {
 		ArrayList<Integer> primes = primeFactory();
-		ArrayList<Integer> primesOfNum = new ArrayList<Integer>();
 		for (Integer integer : primes) {
 			BigInteger prime = BigInteger.valueOf(Integer.valueOf(integer));
 			if(num.mod(prime).equals(BigInteger.ZERO)) {
